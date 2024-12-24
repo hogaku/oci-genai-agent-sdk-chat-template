@@ -38,9 +38,6 @@ def main():
         retry_strategy=retry_strategy
     )
 
-    # 現在の時間を取得
-    start_time = datetime.now().isoformat()
-
     # ユーザーIDの生成
     user_id = os.getenv("USER_ID")  # 環境変数から取得、なければUUIDを生成
     if not user_id:
@@ -78,10 +75,6 @@ def main():
                         "Technical Decision-Making",
                         "Effective Communication"
                     ]
-                },
-                "session_context": {
-                    "start_time": start_time,
-                    "initiator": user_id
                 }
             })
         ),
