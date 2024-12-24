@@ -1,0 +1,10 @@
+[project]
+name = "oci-genai-agent-sdk-test"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "oci>=2.141.1",
+    "python-dotenv>=1.0.1",
+]
