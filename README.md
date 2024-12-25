@@ -2,12 +2,11 @@
 # OCI Generative AI Agent SDK Chat Template
 
 This repository provides a customizable chat application template using Oracle's Generative AI Agent SDK. 
-The sample is designed to be flexible, with features for adjusting system prompts, retry logic, and user preferences.
+The sample is designed to be flexible, with features for adjusting system prompts, retry logic, and session metadata.
 
 ## Features
 - Easy-to-modify system prompt for specific use cases.
 - Built-in retry logic for error handling.
-- Adjustable properties like `max_tokens` and `detail_level`.
 
 ## Prerequisites
 - Python 3.12 or later
@@ -47,6 +46,3 @@ uv run src/oci_genai_chat.py
 ## Adjustable Properties
 - **System Prompt**: Customize the behavior and context of the assistant.
 - **Retry Logic**: Fine-tune retry attempts and timeouts.
-- **User Preferences**:
-  - `detail_level`: Adjust verbosity.
-  - `max_tokens`: Limit response length.
