@@ -53,7 +53,6 @@ def main():
     user_preferences = {
         "detail_level": "high",  # 応答の詳細度
         "tone": "formal",       # 応答のトーン
-        "max_tokens": 100  # 応答のトークン数制限を応答速度に応じて設定
     }
 
     # セッションの作成
@@ -115,7 +114,6 @@ def main():
                 user_message=user_input,  # ユーザーからのメッセージ
                 session_id=session_id,  # セッション ID を指定
                 should_stream=False,  # ストリーミングを有効にするか (False がデフォルト)
-                max_tokens=user_preferences["max_tokens"]  # トークン数制限を適用
             )
         )
 
